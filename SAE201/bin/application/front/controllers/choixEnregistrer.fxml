@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="main_container" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.front.controllers.ChoixEnregistrerController">
+   <children>
+      <AnchorPane prefHeight="102.0" prefWidth="600.0" style="-fx-background-color: #004968;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label layoutX="406.0" layoutY="36.0" text="Le Cheval Blanc" textAlignment="RIGHT" textFill="WHITE" AnchorPane.rightAnchor="14.800000000000011">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="26.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="86.0" fitWidth="106.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="14.0">
+               <image>
+                  <Image url="@cheval_blanc.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <HBox alignment="CENTER" layoutX="59.0" layoutY="200.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="65.0" prefWidth="482.0" spacing="20.0" AnchorPane.bottomAnchor="134.4" AnchorPane.leftAnchor="59.0" AnchorPane.rightAnchor="59.0" AnchorPane.topAnchor="200.0">
+         <children>
+            <Button fx:id="b_conso" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ClickButton" onMouseEntered="#MouseInButton" onMouseExited="#MouseQuitButton" prefHeight="65.6" prefWidth="147.2" style="-fx-background-radius: 30em; -fx-background-color: #004968;" styleClass="button" text="Consommation" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Inter_FXH Regular" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="b_petitdej" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ClickButton" onMouseEntered="#MouseInButton" onMouseExited="#MouseQuitButton" prefHeight="65.6" prefWidth="147.2" style="-fx-background-radius: 30em; -fx-background-color: #004968;" styleClass="button" stylesheets="@style.css" text="Petit Déjeuner" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Inter_FXH Regular" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="b_prestation" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ClickButton" onMouseEntered="#MouseInButton" onMouseExited="#MouseQuitButton" prefHeight="65.6" prefWidth="147.2" style="-fx-background-radius: 30em; -fx-background-color: #004968;" styleClass="button" text="Prestation" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Inter_FXH Regular" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Button fx:id="b_retour" layoutX="466.0" layoutY="350.0" mnemonicParsing="false" onAction="#ClickButton" onMouseEntered="#MouseInButton" onMouseExited="#MouseQuitButton" prefHeight="35.0" prefWidth="119.0" style="-fx-background-radius: 30em; -fx-background-color: #004968;" styleClass="button" text="Retour" textFill="WHITE" AnchorPane.bottomAnchor="14.799999999999997" AnchorPane.rightAnchor="14.799999999999997">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label alignment="CENTER" layoutX="-1.0" layoutY="130.0" prefHeight="30.0" prefWidth="600.0" text="Quel service désirez-vous enregistrer ?" wrapText="true" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0">
+         <font>
+            <Font name="DengXian Regular" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
